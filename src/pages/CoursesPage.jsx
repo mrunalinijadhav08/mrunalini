@@ -2,7 +2,7 @@
 import Header from "../components/Header/Header"
 import React from 'react';
 import { Link } from 'react-router-dom';
-import '/src/styles/pages.css'
+import '/src/styles/Pages.css'
 import CollegeTourVideo from '/public/videos/college-tour.mp4'; // Your imported video
 import Footer from "../components/Footer/Footer";
 const CoursesPage = () => {
