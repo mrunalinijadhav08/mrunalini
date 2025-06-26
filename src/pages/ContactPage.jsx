@@ -1,6 +1,6 @@
 import Footer from "../components/Footer/Footer";
 import Header from "../components/Header/Header";
-import '/src/styles/pages.css'
+import '/src/styles/Pages.css'
 // src/pages/ContactPage.jsx
 const ContactPage = () => {
   return (
