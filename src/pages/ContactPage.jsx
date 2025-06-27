@@ -1,11 +1,10 @@
-import Footer from "../components/Footer/Footer";
-import Header from "../components/Header/Header";
+
 import '/src/styles/Pages.css'
 // src/pages/ContactPage.jsx
 const ContactPage = () => {
   return (
     <div>
-      <Header/>
+     
       <div className="back-page">
     <div className="page-container" style={{overflow:"auto"}}>
       <h1>Contact Us</h1>
@@ -47,7 +46,7 @@ const ContactPage = () => {
       </p>
     </div>
     </div>
-    <Footer/>
+
     </div>
   );
 }

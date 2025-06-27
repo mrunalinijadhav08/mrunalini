@@ -1,14 +1,14 @@
 // src/pages/CoursesPage.jsx
-import Header from "../components/Header/Header"
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '/src/styles/Pages.css'
 import CollegeTourVideo from '/public/videos/college-tour.mp4'; // Your imported video
-import Footer from "../components/Footer/Footer";
+
 const CoursesPage = () => {
   return (
     <div>
-      <Header/>
+   
       <div className="back-page">
     <div className="page-container" style={{overflow:"auto"}}>
       <h1>Our Academic Programs</h1>
@@ -116,7 +116,7 @@ const CoursesPage = () => {
       </div>
     </div>
     </div>
-    <Footer/>
+  
     </div>
 
   );

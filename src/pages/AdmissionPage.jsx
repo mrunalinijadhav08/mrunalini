@@ -1,12 +1,12 @@
 // src/pages/AdmissionsPage.jsx
 import { Link } from "react-router-dom";
-import Header from "../components/Header/Header";
+
 import '/src/styles/Pages.css'
-import Footer from "../components/Footer/Footer";
+
 const AdmissionsPage = () => {
   return (
     <div>
-      <Header/>
+     
     <div className="page-container" style={{ overflow: "auto" }}>
       <h1>Admissions at Vivekanand College</h1>
       <p>
@@ -93,7 +93,7 @@ const AdmissionsPage = () => {
       {/* Replace "https://yourcollegeadmissionportal.com" with a real application portal link */}
       {/* </div> */}
     </div>
-    <Footer/>
+   
     </div>
   );
 };

@@ -4,29 +4,49 @@ import CoursesPage from './pages/CoursesPage';
 import AdmissionsPage from './pages/AdmissionPage';
 import ChatbotComponent from './components/Chatbot/ChatbotComponent';
 import ContactPage from './pages/ContactPage';
+
+import Home from './pages/HomePage';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
-import HomePage from './pages/HomePage';
-const App = () => {
+import DeveloperInfoPopup from './components/DeveloperInfo/DeveloperInfoPopup';
+import { useState } from 'react';
 
+
+const App = () => {
+const [showPopup, setShowPopup] = useState(true);
+  const handleClosePopup = () => {
+    setShowPopup(false);
+  };
   return (
+    <>
+      <div>
+        {/* Your main application content */}
+        <DeveloperInfoPopup
+          show={showPopup}
+          onClose={handleClosePopup}
+          studentName="Mrunalini Anup Jadhav"
+          studentPhotoUrl="/images/saniya.jpg" // Path to their photo
+          uniqueMessage="Learned so much during this OJT! This app showcases my independent coding and deployment skills"
+        />
+      </div>
   <div>
    < BrowserRouter>
-   <Header/>
+  <Header/>
       <Routes>
-        <Route path="/home" element={<HomePage/>}/>
+        <Route path="/" element={<Home/>}/>
         <Route path="/about" element={<AboutPage/>}/>
         <Route path='/courses' element={<CoursesPage/>}/>
         <Route path='/contact' element={<ContactPage/>}/>
         <Route path='/Admission' element={<AdmissionsPage/>}/>
       </Routes>
       <div>
-        <Footer/>
+       <Footer/>
       </div>
       <ChatbotComponent/>
        
     </BrowserRouter>
   </div>
+  </>
 )
 }
 

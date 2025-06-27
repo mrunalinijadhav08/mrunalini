@@ -6,7 +6,7 @@
   max-width: 960px;
   /* Max width for content to prevent it from stretching too wide */
   height: 500px;
-  margin: 20px auto;
+  align-content: center;
   /* Center the content with some top/bottom margin */
  
   background-color: #FFFFFF;

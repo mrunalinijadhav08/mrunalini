@@ -1,11 +1,9 @@
-import Footer from "../components/Footer/Footer";
-import Header from "../components/Header/Header"
 
 // src/pages/AboutPage.jsx
 const AboutPage = () => {
   return (
     <div>
-      <Header/>
+     
       <div className="back-page">
     <div className="page-container" style={{overflow:"auto"}}>
    <h1 className="animate-fade-in-up">About Vivekanand College</h1> {/* <-- ADD THIS CLASS */}
@@ -32,7 +30,7 @@ const AboutPage = () => {
       </p>
     </div>
     </div>
-    <Footer/>
+   
     </div>
   );
 }

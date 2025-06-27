@@ -1,11 +1,10 @@
-//  src/pages/HomePage.jsx
+import '/src/styles/Pages.css'
 import { Link } from "react-router-dom"; // Import Link for internal navigation
-import Header from "../components/Header/Header";
-import Footer from "../components/Footer/Footer";
+
 // Add more image imports if needed
 const HomePage = () => {
   return (
-      <div className="back-page">
+    <div className='back-page'>
     <div className="page-container" style={{ overflow: "auto" }}>
       {/* Hero/Banner Section with Image */}
       <div className="hero-section">
@@ -78,6 +77,6 @@ const HomePage = () => {
       </div>
     </div>
     </div>
-  );
+   );
 };
 export default HomePage;
